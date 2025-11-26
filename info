@@ -1,0 +1,15 @@
+# Creating a ready-to-run Python solution for the lab.
+# It implements:
+# 1) A string set with polynomial rolling hash and separate chaining, supporting +, -, ? operations (until a '.' line).
+# 2) Variant utilities:
+#    - groupdups: count duplicate strings (only those with count>1)
+#    - palin: print all palindromic strings (unique or with counts)
+#    - z: compute Z-function of a single string
+#
+# Usage examples (from shell):
+#   python lab2_polyhash.py                 # interactive ops mode: read lines like "+ abc", "? x", "- y", "."
+#   python lab2_polyhash.py groupdups       # read N then N strings, print "string count" for duplicates
+#   python lab2_polyhash.py palin           # read N then N strings, print palindromes with counts
+#   python lab2_polyhash.py z               # read one string, print Z-array
+#
+# All hashing is polynomial (64-bit wraparound).
